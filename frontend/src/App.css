@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-y: hidden; /* Prevents scrolling */
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.App {
+  padding: 30px;
+  text-align: center;
+  background: url('../public/logo.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+h2{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: '#555',
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+.Google-logo {
+  color: #4285F4;
+}
+
+.Google-logo-red {
+  color: #EA4335;
+}
+
+.Google-logo-yellow {
+  color: #FBBC05;
+}
+
+.Google-logo-green {
+  color: #34A853;
+}
+
+.content-wrapper {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 200px; /* Minimum height to start with */
+  max-height: 500px;
+  overflow: scroll; /* Adds scrollbars when content overflows */
+}
+
+
+/* Add this to App.css */
+
+.info-note {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.info-icon {
+  font-size: 28px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.info-icon:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+}
+
+.note-tooltip {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  width: 260px; /* Slightly wider for more comfortable text layout */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Increased line height for better readability */
+  font-size: 14px;
+  animation: fadeIn 0.3s ease;
+}
+
+.note-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.note-tooltip pre {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.note-tooltip pre strong {
+  font-weight: bold;
+  color: #007bff; /* Emphasize instructions with color */
+}
+
+.note-tooltip ul {
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.note-tooltip li {
+  margin-bottom: 8px;
+}
+
+.note-tooltip p,
+.note-tooltip ul,
+.note-tooltip li {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Animation for tooltip appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

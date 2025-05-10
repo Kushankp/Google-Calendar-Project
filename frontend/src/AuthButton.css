@@ -1,0 +1,21 @@
+.auth-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .auth-button:disabled {
+    background-color: #cccccc; /* Gray color for disabled button */
+    cursor: not-allowed;
+  }
+  

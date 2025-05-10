@@ -1,0 +1,21 @@
+name = "sync-meet"
+main = "src/index.js"
+compatibility_date = "2023-08-23"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DATABASE"
+database_id = "0ff7dfec-3234-4e55-9891-e53462e4e72d"
+database_name = "sync-meet-db"
+
+[vars]
+GOOGLE_API_KEY = "AIzaSyBj6nH8Y7ZjQx0OWyqA2O_l5nNBgjFeLwU"
+GOOGLE_CLIENT_ID = "299025664349-mktjqrpcqkibethus3ibqa8t5bqh6vjk.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET = "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"
+GOOGLE_REDIRECT_URI = """
+https://sync-meet.kushankrockz.workers.dev/google-calendar
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+"""

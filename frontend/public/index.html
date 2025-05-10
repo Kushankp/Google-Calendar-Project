@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Sync Meet</title>
+    
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self'; 
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com/gsi/client; 
+  style-src 'self' 'unsafe-inline'; 
+  img-src 'self' data: https://*.googleusercontent.com; 
+  font-src 'self'; 
+  connect-src 'self' https://sync-meet.kushankrockz.workers.dev https://www.googleapis.com https://accounts.google.com; 
+  child-src 'none'; 
+  frame-src 'self' https://content.googleapis.com; 
+  object-src 'none'; 
+  base-uri 'self'; 
+  form-action 'self';">
+  
+    <!-- Add the favicon link here -->
+    <link rel="icon" href="logo.png" type="image/png">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

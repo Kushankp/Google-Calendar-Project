@@ -1,0 +1,19 @@
+{
+  "name": "sync-meet",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "build": "esbuild src/index.js --bundle --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "uuid": "^11.0.2"
+  }
+}

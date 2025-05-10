@@ -1,0 +1,18 @@
+.alert-banner {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcccb;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
