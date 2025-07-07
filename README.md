@@ -6,7 +6,7 @@ This web application enables users to coordinate meetings by sharing Google Cale
 
 ![Status](https://img.shields.io/badge/status-live-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Deploy](https://img.shields.io/badge/deployed-Google_Cloud_Run-orange)
+![Deploy](https://img.shields.io/badge/deployed-CloudflarePages-orange)
 ![Cloudflare](https://img.shields.io/badge/backend-Cloudflare_Workers-yellow)
 
 ---
